@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libro de Reclamaciones - Esperanza Cabanillas Barboza</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style2.css" />
+  </head>
+  <body>
+    <!-- FLOATING WHATSAPP -->
+    <a
+      href="https://wa.me/51929965687"
+      class="floating-whatsapp"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- HEADER -->
+    <header>
+      <div class="container navbar">
+        <div class="logo">zafiro<br />color</div>
+        <div class="nav-links">
+          <a href="../index.html">Inicio</a>
+          <a href="../index.html#productos">Productos</a>
+          <a href="../index.html#marcas">Marcas</a>
+          <a href="../index.html#ubicacion">Ubicación</a>
+          <a href="../index.html#ubicacion">Horarios</a>
+        </div>
+        <a
+          href="https://wa.me/51929965687"
+          class="btn-whatsapp"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i class="fab fa-whatsapp"></i>
+          Escríbenos
+        </a>
+      </div>
+    </header>
+
+    <div class="libro-seccion">
+      <div class="container-libro">
+      <!-- Encabezado Oficial -->
+      <div class="header-libro">
+        <h1>LIBRO DE RECLAMACIONES</h1>
+        <h2>HOJA DE RECLAMACIÓN VIRTUAL</h2>
+      </div>
+
+      <!-- Datos fijos del Proveedor -->
+      <div class="grid-proveedor">
+        <div>
+          <strong>PROVEEDOR:</strong> ESPERANZA CABANILLAS BARBOZA<br />
+          <strong>RUC:</strong> 10414438071
+        </div>
+        <div>
+          <strong>DOMICILIO:</strong> PUEBLO J.N. PROGRESO GRP 2 MZ. K LT.17 VMT
+        </div>
+      </div>
+
+      <!-- Formulario que procesa los datos -->
+      <!-- REEMPLAZA "tu-correo@gmail.com" por tu correo real para recibir las quejas -->
+      <form action="https://formsubmit.co/davidzt125@gmail.com" method="POST">
+        <!-- Configuración interna de Formsubmit -->
+        <input
+          type="hidden"
+          name="_next"
+          value="../index.html"
+        />
+        <!-- Honeypot para evitar spam de robots -->
+        <input type="text" name="_honey" style="display:none" />
+        <!-- Opcional: link a donde redirigir después -->
+        <input
+          type="hidden"
+          name="_subject"
+          value="¡Nueva reclamación recibida en Web!"
+        />
+
+        <!-- Identificación del Consumidor -->
+        <fieldset>
+          <legend>1. Identificación del Consumidor Reclamante</legend>
+
+          <div class="form-group">
+            <label for="nombre">NOMBRE COMPLETO:</label>
+            <input type="text" id="nombre" name="Cliente_Nombre" required />
+          </div>
+
+          <div class="form-group-inline">
+            <div class="form-group" style="flex: 1">
+              <label for="dni">DNI / CE:</label>
+              <input type="text" id="dni" name="Cliente_Documento" required />
+            </div>
+            <div class="form-group" style="flex: 1">
+              <label for="telefono">TELÉFONO:</label>
+              <input type="text" id="telefono" name="Cliente_Telefono" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="domicilio">DOMICILIO:</label>
+            <input
+              type="text"
+              id="domicilio"
+              name="Cliente_Domicilio"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-MAIL:</label>
+            <input type="email" id="email" name="Cliente_Email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="apoderado"
+              >SI ES MENOR DE EDAD, NOMBRE DEL PADRE, MADRE O APODERADO:</label
+            >
+            <input type="text" id="apoderado" name="Cliente_Apoderado" />
+          </div>
+        </fieldset>
+
+        <!-- Identificación del Bien Contratado -->
+        <fieldset>
+          <legend>2. Identificación del Bien Contratado</legend>
+
+          <div class="form-group-inline">
+            <label>TIPO:</label>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="producto"
+                name="Bien_Tipo"
+                value="Producto"
+                checked
+              />
+              <label for="producto">PRODUCTO</label>
+            </div>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="servicio"
+                name="Bien_Tipo"
+                value="Servicio"
+              />
+              <label for="servicio">SERVICIO</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="monto">MONTO RECLAMADO (S/.):</label>
+            <input
+              type="number"
+              id="monto"
+              name="Bien_Monto"
+              step="0.01"
+              placeholder="0.00"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="descripcion_bien"
+              >DESCRIPCIÓN DEL BIEN O SERVICIO:</label
+            >
+            <textarea
+              id="descripcion_bien"
+              name="Bien_Descripcion"
+              rows="2"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Detalle de la Reclamación -->
+        <fieldset>
+          <legend>3. Detalle de la Reclamación y Pedido del Consumidor</legend>
+
+          <div class="form-group-inline">
+            <label>TIPO DE TRÁMITE:</label>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="reclamo"
+                name="Tramite_Tipo"
+                value="Reclamo"
+                checked
+              />
+              <label for="reclamo">RECLAMO¹</label>
+            </div>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="queja"
+                name="Tramite_Tipo"
+                value="Queja"
+              />
+              <label for="queja">QUEJA²</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="detalle">DETALLE DEL RECLAMO O QUEJA:</label>
+            <textarea
+              id="detalle"
+              name="Reclamo_Detalle"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="pedido">PEDIDO / SOLICITUD DEL CONSUMIDOR:</label>
+            <textarea
+              id="pedido"
+              name="Reclamo_Pedido"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Textos Legales obligatorios -->
+        <div class="legales">
+          <p>
+            <strong>¹ RECLAMO:</strong> Disconformidad relacionada a los
+            productos o servicios.
+          </p>
+          <p>
+            <strong>² QUEJA:</strong> Disconformidad no relacionada a los
+            productos o servicios; o, malestar o descontento respecto a la
+            atención al público.
+          </p>
+          <p>
+            * La formulación del reclamo no impide acudir a otras vías de
+            solución de controversias ni es requisito previo para interponer una
+            denuncia ante el INDECOPI.
+          </p>
+          <p>
+            * El proveedor debe dar respuesta al reclamo o queja en un plazo no
+            mayor a quince (15) días hábiles, el cual es improrrogable.
+          </p>
+        </div>
+
+        <!-- Bloque de firmas (Solo saldrá impreso en el papel o guardado en PDF) -->
+        <div class="seccion-firmas">
+          <div class="firma-box">FIRMA DEL CONSUMIDOR</div>
+          <div class="firma-box">FIRMA DEL PROVEEDOR</div>
+        </div>
+
+        <!-- Botonera interactiva para la web -->
+        <div class="acciones">
+          <button
+            type="button"
+            class="btn btn-imprimir"
+            onclick="window.print()"
+          >
+            🖨️ Imprimir Hoja / Guardar PDF
+          </button>
+          <button type="submit" class="btn btn-enviar">
+            Enviar Reclamación
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">zafiro<br />color</div>
+          <p>
+            Tu tienda de confianza en belleza, cabello y cuidado personal.
+          </p>
+          <div class="socials"></div>
+        </div>
+        <div>
+          <h3>Enlaces</h3>
+          <br />
+          <div class="footer-links">
+            <a href="../index.html">Inicio</a>
+            <a href="../index.html#productos">Productos</a>
+            <a href="../index.html#marcas">Marcas</a>
+            <a href="../index.html#ubicacion">Ubicación</a>
+          </div>
+        </div>
+        <div>
+          <h3>Horarios</h3>
+          <br />
+          <div class="footer-links">
+            <a href="#">Lunes - Domingo</a>
+            <a href="#">8:00 am - 8:30 pm</a>
+          </div>
+        </div>
+        <div>
+          <h3>Ubicación</h3>
+          <br />
+          <div class="footer-links">
+            <a href="../index.html#ubicacion"> VMT José Gálvez </a>
+            <a href="../index.html#ubicacion"> Lima - Perú </a>
+            <a href="https://wa.me/51929965687" target="_blank" rel="noopener noreferrer"> WhatsApp: +51 929 965 687</a>
+          </div>
+        </div>
+        <div>
+          <h3>Legales</h3>
+          <br />
+          <div class="footer-links">
+            <a href="privacidad.html">Aviso de privacidad</a>
+            <a href="terminos.html">Términos y condiciones</a>
+            <a href="cookies.html">Política de cookies</a>
+            <a href="libro.html">
+              <span>Libro de reclamaciones</span>
+            </a>
+            <a href="libro.html">
+              <img src="../img/libro.jpg" alt="Libro de reclamaciones" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 Zafiro Color - Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
