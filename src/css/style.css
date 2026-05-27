@@ -57,7 +57,7 @@ header {
   color: #ff4d4d;
 }
 .btn-whatsapp {
-  background: linear-gradient(90deg, #ff3b3b, #DC5083);
+  background: linear-gradient(90deg, #ff3b3b, #dc5083);
   color: white;
   padding: 14px 24px;
   border-radius: 999px;
@@ -71,7 +71,7 @@ header {
 .btn-whatsapp:hover {
   transform: translateY(-2px);
 }
-.btn-whatsapp-hero{
+.btn-whatsapp-hero {
   width: 50%;
   background-color: #25d366;
   color: white;
@@ -92,7 +92,7 @@ header {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(120deg, #ff4646 0%, #DC5083 100%);
+  background: linear-gradient(120deg, #ff4646 0%, #dc5083 100%);
   overflow: hidden;
   position: relative;
 }
@@ -177,7 +177,7 @@ header {
   min-width: 220px;
   padding: 25px;
   border-radius: 20px;
-  border: 1px solid #DC5083;
+  border: 1px solid #dc5083;
   text-align: center;
   font-weight: 700;
   font-size: 1.1rem;
@@ -204,7 +204,7 @@ header {
   background: white;
   border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 3px 7px #DC5083;
+  box-shadow: 0 3px 7px #dc5083;
   transition: 0.3s;
 }
 .product-card:hover {
@@ -216,7 +216,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #DC5083;
+  border-bottom: 1px solid #dc5083;
 }
 .image-placeholder {
   width: 80%;
@@ -312,7 +312,7 @@ header {
 }
 /*/////////CTA/////////*/
 .cta {
-  background: linear-gradient(90deg, #ff5b45, #DC5083);
+  background: linear-gradient(90deg, #ff5b45, #dc5083);
   padding: 70px 0;
   color: white;
 }

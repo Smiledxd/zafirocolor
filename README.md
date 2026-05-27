@@ -13,26 +13,29 @@
 * **WhatsApp de Consultas / Pedidos:** +51 929 965 687
 
 ## 3. Estructura de Archivos del Proyecto
-El proyecto está organizado con `index.html` en la raíz y las páginas secundarias agrupadas en la carpeta `pages/`:
+El proyecto está organizado con los archivos fuente dentro del directorio `src/`, agrupando las páginas secundarias de carácter legal en la carpeta `legales/`:
 ```
 zafirocolor/
 ├── README.md               <-- (Este archivo de documentación)
-├── index.html              <-- Página principal (Landing Page)
-├── pages/
-│   ├── libro.html          <-- Libro de Reclamaciones Virtual
-│   ├── privacidad.html     <-- Política de Privacidad de Datos Personales
-│   ├── terminos.html       <-- Términos y Condiciones del Sitio Web
-│   └── cookies.html        <-- Política de Cookies
-├── css/
-│   ├── style.css           <-- Estilos globales (Landing page, header, footer, etc.)
-│   └── style2.css          <-- Estilos específicos (Formulario y páginas legales)
-└── img/
-    ├── hero.jpg            <-- Imagen principal de la landing page
-    ├── libro.jpg           <-- Icono oficial del Libro de Reclamaciones
-    ├── producto1.png       <-- Imagen del producto 1
-    ├── producto2.png       <-- Imagen del producto 2
-    ├── producto3.png       <-- Imagen del producto 3
-    └── producto4.png       <-- Imagen del producto 4
+└── src/
+    ├── index.html          <-- Página principal (Landing Page)
+    ├── sitemap.xml         <-- Mapa del sitio para motores de búsqueda (SEO)
+    ├── robots.txt          <-- Configuración de rastreo e indexación (SEO)
+    ├── legales/
+    │   ├── libro.html      <-- Libro de Reclamaciones Virtual
+    │   ├── privacidad.html <-- Política de Privacidad de Datos Personales
+    │   ├── terminos.html   <-- Términos y Condiciones del Sitio Web
+    │   └── cookies.html    <-- Política de Cookies
+    ├── css/
+    │   ├── style.css       <-- Estilos globales (Landing page, header, footer, etc.)
+    │   └── style2.css      <-- Estilos específicos (Formulario y páginas legales)
+    └── img/
+        ├── hero.jpg        <-- Imagen principal de la landing page
+        ├── libro.jpg       <-- Icono oficial del Libro de Reclamaciones
+        ├── producto1.png   <-- Imagen del producto 1
+        ├── producto2.png   <-- Imagen del producto 2
+        ├── producto3.png   <-- Imagen del producto 3
+        └── producto4.png   <-- Imagen del producto 4
 ```
 
 ## 4. Descripción detallada de los archivos
