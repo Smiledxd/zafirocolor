@@ -67,28 +67,18 @@
             <strong>PROVEEDOR:</strong> ESPERANZA CABANILLAS BARBOZA<br />
             <strong>RUC:</strong> 10414438071
           </div>
-          <div>
-            <strong>DOMICILIO:</strong> PUEBLO J.N. PROGRESO GRP 2 MZ. K LT.17
-            VMT
-          </div>
+          <div><strong>DOMICILIO:</strong> PUEBLO J.N. PROGRESO GRP 2 MZ. K LT.17 VMT</div>
         </div>
 
         <!-- Formulario que procesa los datos -->
         <!-- REEMPLAZA "tu-correo@gmail.com" por tu correo real para recibir las quejas -->
-        <form
-          action="https://formsubmit.co/4e39b5cf9714b73d20a58aadfd10f3e7"
-          method="POST"
-        >
+        <form action="https://formsubmit.co/4e39b5cf9714b73d20a58aadfd10f3e7" method="POST">
           <!-- Configuración interna de Formsubmit -->
           <input type="hidden" name="_next" value="../index.html" />
           <!-- Honeypot para evitar spam de robots -->
           <input type="text" name="_honey" style="display: none" />
           <!-- Opcional: link a donde redirigir después -->
-          <input
-            type="hidden"
-            name="_subject"
-            value="¡Nueva reclamación recibida en Web!"
-          />
+          <input type="hidden" name="_subject" value="¡Nueva reclamación recibida en Web!" />
 
           <!-- Identificación del Consumidor -->
           <fieldset>
@@ -112,12 +102,7 @@
 
             <div class="form-group">
               <label for="domicilio">DOMICILIO:</label>
-              <input
-                type="text"
-                id="domicilio"
-                name="Cliente_Domicilio"
-                required
-              />
+              <input type="text" id="domicilio" name="Cliente_Domicilio" required />
             </div>
 
             <div class="form-group">
@@ -127,8 +112,7 @@
 
             <div class="form-group">
               <label for="apoderado"
-                >SI ES MENOR DE EDAD, NOMBRE DEL PADRE, MADRE O
-                APODERADO:</label
+                >SI ES MENOR DE EDAD, NOMBRE DEL PADRE, MADRE O APODERADO:</label
               >
               <input type="text" id="apoderado" name="Cliente_Apoderado" />
             </div>
@@ -141,118 +125,69 @@
             <div class="form-group-inline">
               <label>TIPO:</label>
               <div class="radio-container">
-                <input
-                  type="radio"
-                  id="producto"
-                  name="Bien_Tipo"
-                  value="Producto"
-                  checked
-                />
+                <input type="radio" id="producto" name="Bien_Tipo" value="Producto" checked />
                 <label for="producto">PRODUCTO</label>
               </div>
               <div class="radio-container">
-                <input
-                  type="radio"
-                  id="servicio"
-                  name="Bien_Tipo"
-                  value="Servicio"
-                />
+                <input type="radio" id="servicio" name="Bien_Tipo" value="Servicio" />
                 <label for="servicio">SERVICIO</label>
               </div>
             </div>
 
             <div class="form-group">
               <label for="monto">MONTO RECLAMADO (S/.):</label>
-              <input
-                type="number"
-                id="monto"
-                name="Bien_Monto"
-                step="0.01"
-                placeholder="0.00"
-              />
+              <input type="number" id="monto" name="Bien_Monto" step="0.01" placeholder="0.00" />
             </div>
 
             <div class="form-group">
-              <label for="descripcion_bien"
-                >DESCRIPCIÓN DEL BIEN O SERVICIO:</label
-              >
-              <textarea
-                id="descripcion_bien"
-                name="Bien_Descripcion"
-                rows="2"
-              ></textarea>
+              <label for="descripcion_bien">DESCRIPCIÓN DEL BIEN O SERVICIO:</label>
+              <textarea id="descripcion_bien" name="Bien_Descripcion" rows="2"></textarea>
             </div>
           </fieldset>
 
           <!-- Detalle de la Reclamación -->
           <fieldset>
-            <legend>
-              3. Detalle de la Reclamación y Pedido del Consumidor
-            </legend>
+            <legend>3. Detalle de la Reclamación y Pedido del Consumidor</legend>
 
             <div class="form-group-inline">
               <label>TIPO DE TRÁMITE:</label>
               <div class="radio-container">
-                <input
-                  type="radio"
-                  id="reclamo"
-                  name="Tramite_Tipo"
-                  value="Reclamo"
-                  checked
-                />
+                <input type="radio" id="reclamo" name="Tramite_Tipo" value="Reclamo" checked />
                 <label for="reclamo">RECLAMO¹</label>
               </div>
               <div class="radio-container">
-                <input
-                  type="radio"
-                  id="queja"
-                  name="Tramite_Tipo"
-                  value="Queja"
-                />
+                <input type="radio" id="queja" name="Tramite_Tipo" value="Queja" />
                 <label for="queja">QUEJA²</label>
               </div>
             </div>
 
             <div class="form-group">
               <label for="detalle">DETALLE DEL RECLAMO O QUEJA:</label>
-              <textarea
-                id="detalle"
-                name="Reclamo_Detalle"
-                rows="4"
-                required
-              ></textarea>
+              <textarea id="detalle" name="Reclamo_Detalle" rows="4" required></textarea>
             </div>
 
             <div class="form-group">
               <label for="pedido">PEDIDO / SOLICITUD DEL CONSUMIDOR:</label>
-              <textarea
-                id="pedido"
-                name="Reclamo_Pedido"
-                rows="3"
-                required
-              ></textarea>
+              <textarea id="pedido" name="Reclamo_Pedido" rows="3" required></textarea>
             </div>
           </fieldset>
 
           <!-- Textos Legales obligatorios -->
           <div class="legales">
             <p>
-              <strong>¹ RECLAMO:</strong> Disconformidad relacionada a los
-              productos o servicios.
+              <strong>¹ RECLAMO:</strong> Disconformidad relacionada a los productos o servicios.
             </p>
             <p>
-              <strong>² QUEJA:</strong> Disconformidad no relacionada a los
-              productos o servicios; o, malestar o descontento respecto a la
-              atención al público.
+              <strong>² QUEJA:</strong> Disconformidad no relacionada a los productos o servicios;
+              o, malestar o descontento respecto a la atención al público.
             </p>
             <p>
-              * La formulación del reclamo no impide acudir a otras vías de
-              solución de controversias ni es requisito previo para interponer
-              una denuncia ante el INDECOPI.
+              * La formulación del reclamo no impide acudir a otras vías de solución de
+              controversias ni es requisito previo para interponer una denuncia ante el INDECOPI.
             </p>
             <p>
-              * El proveedor debe dar respuesta al reclamo o queja en un plazo
-              no mayor a quince (15) días hábiles, el cual es improrrogable.
+              * El proveedor debe dar respuesta al reclamo o queja en un plazo no mayor a quince
+              (15) días hábiles, el cual es improrrogable.
             </p>
           </div>
 
@@ -264,16 +199,10 @@
 
           <!-- Botonera interactiva para la web -->
           <div class="acciones">
-            <button
-              type="button"
-              class="btn btn-imprimir"
-              onclick="window.print()"
-            >
+            <button type="button" class="btn btn-imprimir" onclick="window.print()">
               🖨️ Imprimir Hoja / Guardar PDF
             </button>
-            <button type="submit" class="btn btn-enviar">
-              Enviar Reclamación
-            </button>
+            <button type="submit" class="btn btn-enviar">Enviar Reclamación</button>
           </div>
         </form>
       </div>
@@ -285,9 +214,7 @@
         <div class="footer-grid">
           <div>
             <div class="footer-logo">zafiro<br />color</div>
-            <p>
-              Tu tienda de confianza en belleza, cabello y cuidado personal.
-            </p>
+            <p>Tu tienda de confianza en belleza, cabello y cuidado personal.</p>
             <div class="socials"></div>
           </div>
           <div>
@@ -314,11 +241,7 @@
             <div class="footer-links">
               <a href="../index.html#ubicacion"> VMT José Gálvez </a>
               <a href="../index.html#ubicacion"> Lima - Perú </a>
-              <a
-                href="https://wa.me/51929965687"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://wa.me/51929965687" target="_blank" rel="noopener noreferrer">
                 WhatsApp: +51 929 965 687</a
               >
             </div>
@@ -339,9 +262,7 @@
             </div>
           </div>
         </div>
-        <div class="copyright">
-          © 2026 Zafiro Color - Todos los derechos reservados
-        </div>
+        <div class="copyright">© 2026 Zafiro Color - Todos los derechos reservados</div>
       </div>
     </footer>
   </body>
