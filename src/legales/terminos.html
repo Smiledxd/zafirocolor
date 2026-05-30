@@ -23,9 +23,12 @@
     <link rel="stylesheet" href="../css/style2.css" />
   </head>
   <body>
+    <!-- MENU OVERLAY -->
+    <div class="menu-overlay"></div>
+
     <!-- FLOATING WHATSAPP -->
     <a
-      href="https://wa.me/51929965687"
+      href="https://wa.me/51917236616"
       class="floating-whatsapp"
       rel="noopener noreferrer"
       target="_blank"
@@ -36,16 +39,15 @@
     <!-- HEADER -->
     <header>
       <div class="container navbar">
-        <div class="logo">zafiro<br />color</div>
+        <a href="../index.html" class="logo">zafiro<br />color</a>
         <nav class="nav-links">
-          <a href="../index.html">Inicio</a>
           <a href="../index.html#productos">Productos</a>
           <a href="../index.html#marcas">Marcas</a>
-          <a href="../index.html#ubicacion">Ubicación</a>
-          <a href="../index.html#ubicacion">Horarios</a>
+          <a href="../index.html#sobre-nosotros">Sobre nosotros</a>
+          <a href="../index.html#ubicacion">Ubicación y Horarios</a>
         </nav>
         <a
-          href="https://wa.me/51929965687"
+          href="https://wa.me/51917236616"
           class="btn-whatsapp"
           rel="noopener noreferrer"
           target="_blank"
@@ -53,6 +55,13 @@
           <i class="fab fa-whatsapp"></i>
           Escríbenos
         </a>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
 
@@ -60,83 +69,127 @@
       <div class="container-libro">
         <div class="legal-content">
           <h1>Términos y Condiciones</h1>
-          <p>Última actualización: 26 de mayo de 2026.</p>
-
-          <p>
-            Bienvenido al sitio web de <strong>Zafiro Color</strong>. Al acceder y utilizar este
-            sitio, usted acepta cumplir con los siguientes términos y condiciones. Si no está de
-            acuerdo con alguna parte de estos términos, le sugerimos no utilizar nuestra plataforma.
-          </p>
+          <p>Última actualización: 30 de mayo de 2026</p>
 
           <h2>1. Titularidad del Sitio</h2>
           <p>
             Este sitio web es propiedad y está operado por
             <strong>ESPERANZA CABANILLAS BARBOZA</strong>, propietaria de
             <strong>Zafiro Color</strong>, identificada con <strong>RUC N° 10414438071</strong>, con
-            domicilio legal en
-            <strong
-              >Pueblo J.N. Progreso Grp 2 Mz. K Lt.17, Villa María del Triunfo, Lima, Perú</strong
-            >.
+            domicilio en Mercado Ateca, Pueblo J.N. Progreso Grp 2 Mz. K Lt.17, José Gálvez, Villa
+            María del Triunfo, Lima, Perú.
+             <h2>2. Objeto del Sitio Web</h2>
+          <p>
+            Nuestra plataforma web funciona como un catálogo digital, visual e informativo de los
+            productos de belleza, cosméticos, cuidado personal y marcas con las que trabajamos. El
+            sitio no realiza transacciones de comercio electrónico directas (no cuenta con pasarelas
+            de pago en línea ni cobros automatizados). Toda consulta, pedido, confirmación de stock
+            disponible y acuerdo de pago final se realiza de manera externa y directa a través de
+            nuestros canales oficiales de atención en WhatsApp.
           </p>
 
-          <h2>2. Propiedad Intelectual</h2>
+          <h2>3. Precios y Stock de Productos</h2>
           <p>
-            Todo el contenido presente en este sitio, incluyendo pero no limitado a: logotipos,
-            textos, fotografías de productos, diseños gráficos y código fuente, es propiedad
-            exclusiva de <strong>ESPERANZA CABANILLAS BARBOZA (Zafiro Color)</strong> o cuenta con
-            las licencias correspondientes. Queda prohibida su reproducción, distribución o uso
-            comercial sin autorización previa y por escrito.
+            Los precios mostrados en este sitio web están expresados en Soles (S/) e incluyen el
+            Impuesto General a las Ventas (IGV), de conformidad con las leyes de protección al
+            consumidor en el Perú.
+          </p>
+          <p>
+            Zafiro Color se esmera por mantener los precios y ofertas del catálogo digital lo más
+            actualizados posible. Sin embargo, debido a que nuestro inventario se vende en tiempo
+            real en nuestra tienda física del Mercado Ateca, la disponibilidad final del producto y
+            la validación de la oferta vigente deberán ser confirmadas de manera definitiva a través
+            de nuestra comunicación por WhatsApp antes de concretar y cerrar cualquier compra. Zafiro
+            Color se reserva el derecho de modificar su catálogo o retirar productos sin previo aviso
+            por razones de stock.
           </p>
 
-          <h2>3. Uso del Sitio y Veracidad de Información</h2>
+          <h2>4. Propiedad Intelectual y Uso de Marcas</h2>
           <p>
-            El usuario se compromete a utilizar el sitio web de manera lícita. Al utilizar los
-            formularios de la web (contacto, libro de reclamaciones), el usuario garantiza que:
+            El diseño de la interfaz, la estructura de navegación, los textos informativos, el
+            código fuente y las composiciones gráficas o fondos editados mediante herramientas
+            digitales en este sitio web son propiedad intelectual de
+            <strong>ESPERANZA CABANILLAS BARBOZA (Zafiro Color)</strong> o se utilizan bajo fines
+            lícitos de diseño.
+          </p>
+          <p>
+            Asimismo, el usuario reconoce y acepta que los nombres comerciales, logotipos, marcas
+            registradas y diseños de los empaques de los productos exhibidos (tales como Recamier,
+            Skala, Natura, Yanbal, Ésika, Garnier, entre otras marcas del rubro) pertenecen
+            exclusivamente a sus respectivos titulares y fabricantes legítimos. Zafiro Color los
+            menciona, describe y exhibe de buena fe en su calidad de distribuidor y comerciante
+            minorista independiente, con el único fin de identificar los productos originales que
+            ofrece al público en general, al amparo del principio de agotamiento del derecho de marca
+            regulado en la Decisión 486 de la Comunidad Andina. Queda estrictamente prohibida la
+            reproducción total o parcial de los contenidos propios de esta web sin autorización
+            escrita de la titular.
+          </p>
+
+          <h2>5. Uso del Sitio y Veracidad de Información</h2>
+          <p>
+            El usuario se compromete a utilizar el sitio web de manera lícita, bajo los principios
+            de la buena fe y respetando el orden público. Al interactuar con la plataforma, utilizar
+            las vías de redirección de contacto o acceder al Libro de Reclamaciones Virtual, el
+            usuario garantiza que:
           </p>
           <ul>
-            <li>Toda la información personal proporcionada es veraz y actualizada.</li>
             <li>
-              No suplantará la identidad de terceros ni enviará archivos que contengan virus o
-              software malicioso.
+              Toda la información de contacto o datos personales proporcionados son veraces, exactos
+              y actualizados.
+            </li>
+            <li>
+              No suplantará la identidad de terceros ni enviará contenido dañino, enlaces
+              maliciosos, spam o virus informáticos que afecten el código del sitio.
             </li>
           </ul>
 
-          <h2>4. Limitación de Responsabilidad</h2>
+          <h2>6. Limitación de Responsabilidad</h2>
           <p>
-            <strong>Zafiro Color</strong> se esfuerza por mantener la información de la web (precios
-            referenciales de productos, descripción, horarios de atención, etc.) siempre
-            actualizada. Sin embargo:
+            Zafiro Color realiza esfuerzos técnicos constantes para mantener la información de la web
+            (precios, descripciones de productos, marcas, ubicaciones y horarios de atención) libre
+            de errores tipográficos. No obstante:
           </p>
           <ul>
             <li>
-              No garantizamos la ausencia de errores tipográficos o interrupciones técnicas fuera de
-              nuestro control.
+              No nos hacemos responsables por errores tipográficos involuntarios, desfases mínimos en
+              las actualizaciones de precios o interrupciones técnicas imprevistas del servidor
+              ajenas por completo a nuestro control.
             </li>
             <li>
-              No nos hacemos responsables por daños derivados del uso de este sitio web o de la
-              imposibilidad de acceder al mismo.
+              Las imágenes de los productos publicadas en el catálogo digital tienen un carácter
+              descriptivo y referencial (tal como se indica individualmente en el sitio) para
+              ilustrar la presentación del empaque original.
             </li>
           </ul>
 
-          <h2>5. Enlaces a Terceros</h2>
+          <h2>7. Enlaces a Terceros</h2>
           <p>
-            Nuestro sitio puede contener enlaces a redes sociales o servicios de mensajería (como
-            WhatsApp o Instagram). No tenemos control sobre las políticas de privacidad o prácticas
-            de estos sitios externos, por lo que el acceso a ellos queda bajo responsabilidad del
+            Nuestro sitio contiene enlaces de redirección directos a canales externos,
+            específicamente a la aplicación de mensajería WhatsApp (para la atención de pedidos) y a
+            las plataformas de mapas de Google (para la geolocalización del local en José Gálvez).
+            Zafiro Color no tiene control, monitoreo ni responsabilidad sobre las políticas de
+            privacidad, términos de uso o el funcionamiento operativo de estas plataformas externas
+            de terceros, por lo que el acceso a ellas queda bajo la absoluta responsabilidad del
             usuario.
           </p>
 
-          <h2>6. Modificaciones</h2>
+          <h2>8. Modificaciones de los Términos</h2>
           <p>
-            Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento
-            para adaptarlos a novedades legislativas o cambios en los servicios de la tienda. Las
-            modificaciones entrarán en vigor desde su publicación en la web.
+            Nos reservamos el derecho de modificar, actualizar o corregir estos Términos y
+            Condiciones en cualquier momento, con la finalidad de adaptarlos a nuevas regulaciones
+            legales del Indecopi, normativas tributarias o cambios internos en el modelo de
+            atención de la tienda. Cualquier modificación entrará en vigencia inmediatamente después
+            de ser publicada en este espacio web.
           </p>
 
-          <h2>7. Ley Aplicable y Jurisdicción</h2>
+          <h2>9. Ley Aplicable y Jurisdicción</h2>
           <p>
-            Estos términos se rigen por las leyes de la República del Perú. Cualquier controversia
-            será resuelta ante los tribunales y juzgados del distrito judicial de Lima.
+            Estos términos se rigen, interpretan y ejecutan bajo las leyes de la República del Perú
+            (incluyendo el Código de Protección y Defensa del Consumidor - Ley N° 29571). Cualquier
+            controversia, desacuerdo o reclamo derivado del uso de este sitio web o de la información
+            aquí contenida que no pueda ser solucionado directamente y de mutuo acuerdo de forma
+            amistosa, será sometido formalmente a la jurisdicción de los jueces y tribunales de Lima,
+            Perú.
           </p>
         </div>
       </div>
@@ -155,29 +208,27 @@
             <h3>Enlaces</h3>
             <br />
             <div class="footer-links">
-              <a href="../index.html">Inicio</a>
               <a href="../index.html#productos">Productos</a>
               <a href="../index.html#marcas">Marcas</a>
-              <a href="../index.html#ubicacion">Ubicación</a>
+              <a href="../index.html#sobre-nosotros">Sobre nosotros</a>
+              <a href="../index.html#ubicacion">Ubicación y Horarios</a>
             </div>
           </div>
           <div>
             <h3>Horarios</h3>
             <br />
             <div class="footer-links">
-              <a href="#">Lunes - Domingo</a>
-              <a href="#">8:00 am - 8:30 pm</a>
+              <span>Lunes - Domingo</span>
+              <span>8:00 am - 8:30 pm</span>
             </div>
           </div>
           <div>
             <h3>Ubicación</h3>
             <br />
             <div class="footer-links">
-              <a href="../index.html#ubicacion"> VMT José Gálvez </a>
-              <a href="../index.html#ubicacion"> Lima - Perú </a>
-              <a href="https://wa.me/51929965687" target="_blank" rel="noopener noreferrer">
-                WhatsApp: +51 929 965 687</a
-              >
+              <span> VMT José Gálvez </span>
+              <span> Lima - Perú </span>
+              <span> WhatsApp: +51 917 236 616</span>
             </div>
           </div>
           <div>
@@ -191,6 +242,7 @@
                 <span>Libro de reclamaciones</span>
               </a>
               <a href="libro.html">
+                <!-- Tamaño de imagen recomendado: 120x80px (se renderiza con CSS a max-width: 60px) -->
                 <img src="../img/libro.jpg" alt="Libro de reclamaciones" />
               </a>
             </div>
@@ -199,5 +251,34 @@
         <div class="copyright">© 2026 Zafiro Color - Todos los derechos reservados</div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const overlay = document.querySelector(".menu-overlay");
+        const links = document.querySelectorAll(".nav-links a");
+
+        function toggleMenu() {
+          const isActive = hamburger.classList.toggle("active");
+          navLinks.classList.toggle("active");
+          overlay.classList.toggle("active");
+          document.body.classList.toggle("no-scroll");
+          hamburger.setAttribute("aria-expanded", isActive);
+        }
+
+        hamburger.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", toggleMenu);
+
+        links.forEach((link) => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+            overlay.classList.remove("active");
+            document.body.classList.remove("no-scroll");
+            hamburger.setAttribute("aria-expanded", "false");
+          });
+        });
+      });
+    </script>
   </body>
 </html>

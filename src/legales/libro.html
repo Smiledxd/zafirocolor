@@ -23,9 +23,12 @@
     <link rel="stylesheet" href="../css/style2.css" />
   </head>
   <body>
+    <!-- MENU OVERLAY -->
+    <div class="menu-overlay"></div>
+
     <!-- FLOATING WHATSAPP -->
     <a
-      href="https://wa.me/51929965687"
+      href="https://wa.me/51917236616"
       class="floating-whatsapp"
       rel="noopener noreferrer"
       target="_blank"
@@ -36,16 +39,14 @@
     <!-- HEADER -->
     <header>
       <div class="container navbar">
-        <div class="logo">zafiro<br />color</div>
+        <a href="../index.html" class="logo">zafiro<br />color</a>
         <nav class="nav-links">
-          <a href="../index.html">Inicio</a>
           <a href="../index.html#productos">Productos</a>
           <a href="../index.html#marcas">Marcas</a>
-          <a href="../index.html#ubicacion">Ubicación</a>
-          <a href="../index.html#ubicacion">Horarios</a>
+          <a href="../index.html#ubicacion">Ubicación y Horarios</a>
         </nav>
         <a
-          href="https://wa.me/51929965687"
+          href="https://wa.me/51917236616"
           class="btn-whatsapp"
           rel="noopener noreferrer"
           target="_blank"
@@ -53,6 +54,13 @@
           <i class="fab fa-whatsapp"></i>
           Escríbenos
         </a>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
 
@@ -224,29 +232,26 @@
             <h3>Enlaces</h3>
             <br />
             <div class="footer-links">
-              <a href="../index.html">Inicio</a>
               <a href="../index.html#productos">Productos</a>
               <a href="../index.html#marcas">Marcas</a>
-              <a href="../index.html#ubicacion">Ubicación</a>
+              <a href="../index.html#ubicacion">Ubicación y Horarios</a>
             </div>
           </div>
           <div>
             <h3>Horarios</h3>
             <br />
             <div class="footer-links">
-              <a href="#">Lunes - Domingo</a>
-              <a href="#">8:00 am - 8:30 pm</a>
+              <span>Lunes - Domingo</span>
+              <span>8:00 am - 8:30 pm</span>
             </div>
           </div>
           <div>
             <h3>Ubicación</h3>
             <br />
             <div class="footer-links">
-              <a href="../index.html#ubicacion"> VMT José Gálvez </a>
-              <a href="../index.html#ubicacion"> Lima - Perú </a>
-              <a href="https://wa.me/51929965687" target="_blank" rel="noopener noreferrer">
-                WhatsApp: +51 929 965 687</a
-              >
+              <span> VMT José Gálvez </span>
+              <span> Lima - Perú </span>
+              <span> WhatsApp: +51 917 236 616</span>
             </div>
           </div>
           <div>
@@ -260,6 +265,7 @@
                 <span>Libro de reclamaciones</span>
               </a>
               <a href="libro.html">
+                <!-- Tamaño de imagen recomendado: 120x80px (se renderiza con CSS a max-width: 60px) -->
                 <img src="../img/libro.jpg" alt="Libro de reclamaciones" />
               </a>
             </div>
@@ -268,5 +274,34 @@
         <div class="copyright">© 2026 Zafiro Color - Todos los derechos reservados</div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const overlay = document.querySelector(".menu-overlay");
+        const links = document.querySelectorAll(".nav-links a");
+
+        function toggleMenu() {
+          const isActive = hamburger.classList.toggle("active");
+          navLinks.classList.toggle("active");
+          overlay.classList.toggle("active");
+          document.body.classList.toggle("no-scroll");
+          hamburger.setAttribute("aria-expanded", isActive);
+        }
+
+        hamburger.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", toggleMenu);
+
+        links.forEach((link) => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+            overlay.classList.remove("active");
+            document.body.classList.remove("no-scroll");
+            hamburger.setAttribute("aria-expanded", "false");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
