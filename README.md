@@ -10,7 +10,7 @@
 * **RUC:** 10414438071
 * **Domicilio Fiscal / Físico:** Mercado Ateca, Pueblo J.N. Progreso Grp 2 Mz. K Lt.17, Villa María del Triunfo, Lima, Perú
 * **Correo de Contacto / Administración:** davidzt125@gmail.com
-* **WhatsApp de Consultas / Pedidos:** +51 929 965 687
+* **WhatsApp de Consultas / Pedidos:** +51 917 236 616
 
 ## 3. Estructura de Archivos del Proyecto
 El proyecto está organizado con los archivos fuente dentro del directorio `src/`, agrupando las páginas secundarias de carácter legal en la carpeta `legales/`:
@@ -21,6 +21,7 @@ zafirocolor/
     ├── index.html          <-- Página principal (Landing Page)
     ├── sitemap.xml         <-- Mapa del sitio para motores de búsqueda (SEO)
     ├── robots.txt          <-- Configuración de rastreo e indexación (SEO)
+    ├── _headers            <-- Cabeceras de seguridad (CSP, HSTS) para Cloudflare Pages
     ├── legales/
     │   ├── libro.html      <-- Libro de Reclamaciones Virtual
     │   ├── privacidad.html <-- Política de Privacidad de Datos Personales
@@ -30,12 +31,11 @@ zafirocolor/
     │   ├── style.css       <-- Estilos globales (Landing page, header, footer, etc.)
     │   └── style2.css      <-- Estilos específicos (Formulario y páginas legales)
     └── img/
-        ├── hero.jpg        <-- Imagen principal de la landing page
+        ├── hero.webp       <-- Imagen principal de la landing page
+        ├── og-image.jpg    <-- Imagen 1200x630 para compartir en redes (Open Graph)
+        ├── favicon-*.png   <-- Favicons (32 y 192 px) y apple-touch-icon.png
         ├── libro.jpg       <-- Icono oficial del Libro de Reclamaciones
-        ├── producto1.png   <-- Imagen del producto 1
-        ├── producto2.png   <-- Imagen del producto 2
-        ├── producto3.png   <-- Imagen del producto 3
-        └── producto4.png   <-- Imagen del producto 4
+        └── 1.webp … 18.webp <-- Imágenes de productos (máx. 600 px)
 ```
 
 ## 4. Descripción detallada de los archivos

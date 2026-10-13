@@ -67,6 +67,51 @@ img {
   font-weight: 800;
 }
 
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #c93b6f;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.hero-hours {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  font-weight: 600;
+}
+
+.open-status {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #fff;
+  color: #555;
+}
+
+.open-status.is-open {
+  background: #e7f9ee;
+  color: #13803d;
+}
+
+.open-status.is-closed {
+  background: #fdecec;
+  color: #b42318;
+}
+
+.location-item .open-status {
+  margin-top: 6px;
+}
+
 .hero-text p {
   font-size: 1.05rem;
   line-height: 1.6;
@@ -299,11 +344,30 @@ body.no-scroll {
   position: relative;
 }
 
+/* Sin JS (o con movimiento reducido) las marcas se muestran en cuadrícula */
 .brands-track {
+  list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
+}
+
+/* margin-right en vez de gap para que el -50% del loop sea exacto */
+.brands-track.is-animated {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 0;
   width: max-content;
-  animation: scrollBrands 30s linear infinite;
+  animation: scrollBrands 45s linear infinite;
+}
+
+.brands-track.is-animated .brand-card {
+  margin-right: 25px;
+}
+
+.brands-slider:hover .brands-track.is-animated {
+  animation-play-state: paused;
 }
 
 .brand-card {
@@ -426,6 +490,7 @@ body.no-scroll {
 }
 
 .seo-info-container h2 {
+  text-align: left;
   font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 24px;
@@ -443,8 +508,77 @@ body.no-scroll {
   margin-bottom: 0;
 }
 
-/* ─── SECCIÓN: TESTIMONIOS ──────────────────── */
-/* (Sin testimonios registrados en esta plantilla) */
+.area-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.area-tags li {
+  background: #fff4ee;
+  color: #c93b6f;
+  border: 1px solid rgba(220, 80, 131, 0.25);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ─── SECCIÓN: PREGUNTAS FRECUENTES ─────────── */
+.faq {
+  padding: 80px 0;
+}
+
+.faq-container {
+  max-width: 850px;
+}
+
+.faq details {
+  background: white;
+  border: 1px solid rgba(220, 80, 131, 0.25);
+  border-radius: 16px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.faq summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 50px 18px 22px;
+  font-weight: 600;
+  position: relative;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #dc5083;
+}
+
+.faq details[open] summary::after {
+  content: "−";
+}
+
+.faq details p {
+  padding: 0 22px 20px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.faq details a {
+  color: #c93b6f;
+  font-weight: 600;
+}
 
 /* ─── SECCIÓN: CONTACTO ─────────────────────── */
 .location {
@@ -476,6 +610,7 @@ body.no-scroll {
 }
 
 .location-list {
+  font-style: normal;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -486,6 +621,35 @@ body.no-scroll {
   display: flex;
   gap: 15px;
   align-items: flex-start;
+}
+
+.location-item a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.location-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-outline {
+  border: 2px solid #dc5083;
+  color: #c93b6f;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #dc5083;
+  color: white;
 }
 
 .location-item i {
@@ -674,6 +838,22 @@ footer {
   }
 }
 
+/* ─── ACCESIBILIDAD ─────────────────────────── */
+:focus-visible {
+  outline: 3px solid #0e1122;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .scroll-down {
+    animation: none;
+  }
+}
+
 /* ─── RESPONSIVE: TABLET (768px) ────────────── */
 @media (max-width: 1000px) {
   .hero-grid,
@@ -689,8 +869,15 @@ footer {
     display: none;
   }
 
+  .hero-badge,
+  .hero-hours,
   .btn-whatsapp-hero {
-    display: none;
+    justify-content: center;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-text h1 {
@@ -717,7 +904,6 @@ footer {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 15px;
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
     transform: translateX(100%);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 1000;
@@ -725,6 +911,7 @@ footer {
 
   .nav-links.active {
     transform: translateX(0);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
   }
 
   .nav-links a {
@@ -757,6 +944,22 @@ footer {
   .seo-info-container p {
     font-size: 0.95rem;
   }
+
+  .seo-info-container {
+    text-align: left;
+  }
+
+  .faq {
+    padding: 60px 0;
+  }
+
+  .floating-whatsapp {
+    width: 58px;
+    height: 58px;
+    font-size: 1.7rem;
+    bottom: 18px;
+    right: 18px;
+  }
 }
 
 /* ─── RESPONSIVE: MÓVIL (480px) ─────────────── */
@@ -774,12 +977,21 @@ footer {
     margin-bottom: 15px;
   }
 
+  .hero-hours > i {
+    display: none;
+  }
+
   .product-circle {
     height: 400px;
   }
 
   .location-info h2 {
     font-size: 2rem;
+  }
+
+  .map-placeholder {
+    height: 340px;
+    border-radius: 20px;
   }
 
   .cta-text h2 {

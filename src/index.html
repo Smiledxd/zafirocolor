@@ -1,43 +1,66 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-PE">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Zafiro Color | Cosméticos y Tintes en José Gálvez, VMT - Mercado Ateca
+    </title>
     <meta
       name="description"
-      content="Distribuidora de cosméticos, tintes de cabello por mayor y menor, maquillaje y cuidado personal en Zafiro Color, Mercado Ateca (José Gálvez, VMT). ¡Productos económicos para el hogar y salones de belleza!"
+      content="Tienda de cosméticos y tintes por mayor y menor en el Mercado Ateca, José Gálvez (Villa María del Triunfo). Shampoos, perfumes, esmaltes y artículos para salones. Abierto todos los días de 8:30 a.m. a 8:30 p.m."
     />
     <meta name="author" content="Zafiro Color" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#dc5083" />
     <link rel="canonical" href="https://zafirocolor.com/" />
+
+    <!-- SEO local -->
+    <meta name="geo.region" content="PE-LIM" />
+    <meta
+      name="geo.placename"
+      content="José Gálvez, Villa María del Triunfo, Lima"
+    />
+    <meta name="geo.position" content="-12.212483;-76.908104" />
+    <meta name="ICBM" content="-12.212483, -76.908104" />
+
+    <!-- Open Graph / redes sociales -->
     <meta
       property="og:title"
-      content="Zafiro Color | Tienda de Cosméticos y Tintes en VMT José Gálvez - Mercado Ateca"
+      content="Zafiro Color | Cosméticos y Tintes en José Gálvez, VMT - Mercado Ateca"
     />
     <meta
       property="og:description"
-      content="Distribuidora de cosméticos, tintes de cabello por mayor y menor, maquillaje y cuidado personal en Zafiro Color, Mercado Ateca (José Gálvez, VMT). ¡Productos económicos para el hogar y salones de belleza!"
+      content="Cosméticos, tintes, shampoos y perfumes por mayor y menor en el Mercado Ateca, José Gálvez (VMT). Abierto todos los días de 8:30 a.m. a 8:30 p.m."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://zafirocolor.com" />
+    <meta property="og:url" content="https://zafirocolor.com/" />
     <meta property="og:site_name" content="Zafiro Color" />
-    <meta property="og:image" content="https://zafirocolor.com/img/hero.jpg" />
+    <meta
+      property="og:image"
+      content="https://zafirocolor.com/img/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Productos de belleza y tintes de Zafiro Color en VMT"
+    />
     <meta property="og:locale" content="es_PE" />
-    <meta property="og:locale:alternate" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Zafiro Color | Tienda de Cosméticos y Tintes en VMT José Gálvez - Mercado Ateca"
+      content="Zafiro Color | Cosméticos y Tintes en José Gálvez, VMT - Mercado Ateca"
     />
     <meta
       name="twitter:description"
-      content="Distribuidora de cosméticos, tintes de cabello por mayor y menor, maquillaje y cuidado personal en Zafiro Color, Mercado Ateca (José Gálvez, VMT). ¡Productos económicos para el hogar y salones de belleza!"
+      content="Cosméticos, tintes, shampoos y perfumes por mayor y menor en el Mercado Ateca, José Gálvez (VMT). Abierto todos los días de 8:30 a.m. a 8:30 p.m."
+    />
+    <meta
+      name="twitter:image"
+      content="https://zafirocolor.com/img/og-image.jpg"
     />
 
-    <title>
-      Tienda de Cosméticos y Tintes en VMT José Gálvez - Mercado Ateca | Zafiro
-      Color
-    </title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,105 +75,193 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/favicon.jpeg" type="image/jpeg" />
+    <link rel="preload" as="image" href="img/hero.webp" fetchpriority="high" />
+    <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png" />
+    <link
+      rel="icon"
+      href="img/favicon-192.png"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
-    <!-- Schema.org CosmeticStore JSON-LD -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K7JS89MPHR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K7JS89MPHR");
+    </script>
+
+    <!-- Schema.org: negocio local + preguntas frecuentes -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "CosmeticStore",
-        "name": "Zafiro Color",
-        "alternateName": [
-          "Zafiro Color - Tienda de Cosméticos y Tintes",
-          "Zafiro Color VMT"
-        ],
-        "description": "Tienda de cosméticos y productos de belleza en Villa María del Triunfo (VMT) José Gálvez. Venta de tintes por mayor y menor, cuidado personal, perfumería y artículos de belleza económicos para el hogar y salones.",
-        "image": "https://zafirocolor.com/img/hero.jpg",
-        "@id": "https://zafirocolor.com/#cosmeticstore",
-        "url": "https://zafirocolor.com/",
-        "telephone": "+51917236616",
-        "priceRange": "S/ - S$$",
-        "currenciesAccepted": "PEN",
-        "paymentAccepted": "Cash, Credit Card, Yape, Plin",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Mercado Ateca, Pueblo J.N. Progreso Grp 2 Mz. K Lt.17, José Gálvez",
-          "addressLocality": "Villa María del Triunfo",
-          "addressRegion": "Lima",
-          "postalCode": "15816",
-          "addressCountry": "PE"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": -12.212483,
-          "longitude": -76.908104
-        },
-        "hasMap": "https://maps.app.goo.gl/z8dsLWWSMRvWQ7yD9",
-        "openingHoursSpecification": [
+        "@graph": [
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday",
-              "Sunday"
+            "@type": "CosmeticStore",
+            "@id": "https://zafirocolor.com/#cosmeticstore",
+            "name": "Zafiro Color",
+            "alternateName": [
+              "Zafiro Color VMT",
+              "Zafiro Color - Tienda de Cosméticos y Tintes"
             ],
-            "opens": "08:00",
-            "closes": "20:30"
-          }
-        ],
-        "sameAs": ["https://wa.me/51917236616"],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Catálogo de Cosméticos y Artículos de Belleza",
-          "itemListElement": [
-            {
-              "@type": "OfferCatalog",
-              "name": "Tintes de Cabello",
-              "description": "Tintes profesionales para cabello al por mayor y menor para salones de belleza y público en general."
+            "description": "Tienda y distribuidora de cosméticos, tintes y productos de belleza por mayor y menor en el Mercado Ateca, José Gálvez, Villa María del Triunfo (Lima). Shampoos, tratamientos capilares, perfumería, esmaltes y artículos para salones de belleza.",
+            "url": "https://zafirocolor.com/",
+            "image": [
+              "https://zafirocolor.com/img/og-image.jpg",
+              "https://zafirocolor.com/img/hero.webp"
+            ],
+            "logo": "https://zafirocolor.com/img/favicon-192.png",
+            "telephone": "+51917236616",
+            "priceRange": "S/ 4 - S/ 480",
+            "currenciesAccepted": "PEN",
+            "paymentAccepted": "Efectivo, Tarjeta de crédito, Yape, Plin",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Mercado Ateca, Pueblo J.N. Progreso Grp 2 Mz. K Lt. 17, José Gálvez",
+              "addressLocality": "Villa María del Triunfo",
+              "addressRegion": "Lima",
+              "postalCode": "15816",
+              "addressCountry": "PE"
             },
-            {
-              "@type": "OfferCatalog",
-              "name": "Cosméticos y Maquillaje",
-              "description": "Gran variedad de cosméticos, labiales, bases, esmaltes de uñas Vogue y Glee en VMT."
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": -12.212483,
+              "longitude": -76.908104
             },
-            {
-              "@type": "OfferCatalog",
-              "name": "Shampoos y Cuidado Capilar",
-              "description": "Shampoos profesionales, tratamientos hidratantes, termoprotectores y cremas de peinar Skala, Recamier y Kativa."
+            "hasMap": "https://www.google.com/maps?cid=12314896689822918033",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "08:30",
+                "closes": "20:30"
+              }
+            ],
+            "areaServed": [
+              { "@type": "Place", "name": "José Gálvez, Villa María del Triunfo" },
+              { "@type": "City", "name": "Villa María del Triunfo" },
+              { "@type": "City", "name": "Villa El Salvador" },
+              { "@type": "City", "name": "San Juan de Miraflores" },
+              { "@type": "City", "name": "Lurín" }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+51917236616",
+              "contactType": "customer service",
+              "availableLanguage": "Spanish",
+              "areaServed": "PE"
             },
-            {
+            "sameAs": [
+              "https://www.google.com/maps?cid=12314896689822918033",
+              "https://maps.app.goo.gl/z8dsLWWSMRvWQ7yD9"
+            ],
+            "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Perfumería y Colonias",
-              "description": "Perfumes originales de marcas reconocidas como Yanbal, Ésika, Cyzone y Natura."
-            },
-            {
-              "@type": "OfferCatalog",
-              "name": "Artículos de Cuidado Personal",
-              "description": "Artículos de salud, aseo y cuidado de la piel de uso diario."
+              "name": "Catálogo de Cosméticos y Artículos de Belleza",
+              "itemListElement": [
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Tintes de Cabello",
+                  "description": "Tintes profesionales para cabello al por mayor y menor para salones de belleza y público en general."
+                },
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Cosméticos y Esmaltes",
+                  "description": "Cosméticos, maquillaje y esmaltes de uñas Vogue, Glee y Cherimoya."
+                },
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Shampoos y Cuidado Capilar",
+                  "description": "Shampoos profesionales, tratamientos, alisados, termoprotectores y cremas de peinar Skala, Recamier, Kativa, Lanosterin y Be Natural."
+                },
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Perfumería y Colonias",
+                  "description": "Perfumes y colonias originales de Yanbal, Ésika, Cyzone y Natura."
+                },
+                {
+                  "@type": "OfferCatalog",
+                  "name": "Artículos para Salones de Belleza",
+                  "description": "Shampoos en galonera, planchas profesionales BaBylissPRO y productos de uso profesional."
+                }
+              ]
             }
-          ]
-        }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://zafirocolor.com/#website",
+            "url": "https://zafirocolor.com/",
+            "name": "Zafiro Color",
+            "inLanguage": "es-PE",
+            "publisher": { "@id": "https://zafirocolor.com/#cosmeticstore" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://zafirocolor.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Cuál es el horario de atención de Zafiro Color?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Atendemos todos los días, de lunes a domingo, de 8:30 a.m. a 8:30 p.m. en el Mercado Ateca, José Gálvez (VMT)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Dónde queda Zafiro Color?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Estamos en el Mercado Ateca, Mz. K Lt. 17 (Pueblo J.N. Progreso Grupo 2), José Gálvez, Villa María del Triunfo, Lima."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Venden cosméticos y tintes por mayor?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. Vendemos por mayor y menor, tanto a familias como a salones de belleza, peluquerías y revendedores de VMT y alrededores. Escríbenos por WhatsApp para consultar precios por cantidad."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué medios de pago aceptan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Aceptamos efectivo, Yape, Plin y tarjeta."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Puedo consultar stock y precios por WhatsApp?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. Escríbenos al +51 917 236 616 y te confirmamos stock y precio antes de tu visita."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-K7JS89MPHR"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-K7JS89MPHR");
-  </script>
 
   <body>
     <!-- MENU OVERLAY -->
@@ -158,25 +269,29 @@
 
     <!-- FLOATING WHATSAPP -->
     <a
-      href="https://wa.me/51917236616"
+      href="https://wa.me/51917236616?text=Hola%20Zafiro%20Color%2C%20quisiera%20consultar%20por%20un%20producto"
       class="floating-whatsapp"
       rel="noopener noreferrer"
       target="_blank"
+      aria-label="Escríbenos por WhatsApp"
     >
-      <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
     <!-- HEADER -->
     <header>
       <div class="container navbar">
-        <a href="#" class="logo">zafiro<br />color</a>
-        <nav class="nav-links">
+        <a href="/" class="logo" aria-label="Zafiro Color - Inicio"
+          >zafiro<br />color</a
+        >
+        <nav class="nav-links" aria-label="Menú principal">
           <a href="#productos">Productos</a>
           <a href="#marcas">Marcas</a>
           <a href="#sobre-nosotros">Sobre nosotros</a>
           <a href="#ubicacion">Ubicación y Horarios</a>
+          <a href="#preguntas">Preguntas</a>
         </nav>
         <a
-          href="https://wa.me/51917236616"
+          href="https://wa.me/51917236616?text=Hola%20Zafiro%20Color%2C%20quisiera%20consultar%20por%20un%20producto"
           class="btn-whatsapp"
           rel="noopener noreferrer"
           target="_blank"
@@ -197,16 +312,26 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
+          <div class="hero-badge">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            Mercado Ateca · José Gálvez, VMT
+          </div>
           <h1>
-            Zafiro Color | Tienda de Cosméticos y Tintes en VMT José Gálvez
+            Zafiro Color: Tienda de Cosméticos y Tintes en José Gálvez, VMT
           </h1>
 
           <p>
-            Tu distribuidora y tienda de cosméticos mediana en el Mercado Ateca.
-            Encuentra shampoos, tratamientos capilares, skincare, maquillaje y
-            artículos de cuidado personal. Abastecemos a familias y salones de
-            belleza locales con precios económicos por mayor y menor en toda la
-            zona de VMT.
+            En <strong>Zafiro Color</strong> encuentras tintes, shampoos,
+            tratamientos capilares, perfumes, esmaltes y artículos de cuidado
+            personal de marcas originales. Atendemos a familias, salones de
+            belleza y revendedores de Villa María del Triunfo con precios por
+            mayor y menor.
+          </p>
+
+          <p class="hero-hours">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <span>Abierto todos los días · 8:30 a.m. - 8:30 p.m.</span>
+            <span class="open-status" data-open-status hidden></span>
           </p>
 
           <div class="hero-features">
@@ -232,7 +357,7 @@
           </div>
 
           <a
-            href="https://wa.me/51917236616"
+            href="https://wa.me/51917236616?text=Hola%20Zafiro%20Color%2C%20quisiera%20hacer%20un%20pedido"
             class="btn-whatsapp-hero"
             rel="noopener noreferrer"
             target="_blank"
@@ -246,6 +371,8 @@
           <!-- Tamaño de imagen recomendado: 1200x800px (o proporción 3:2 / 4:3 de alta resolución) para nitidez en pantallas Retina y Desktop -->
           <img
             src="img/hero.webp"
+            width="1024"
+            height="854"
             alt="Tienda de belleza Zafiro Color en VMT con productos para el cabello y cosméticos"
             fetchpriority="high"
           />
@@ -267,48 +394,28 @@
         <h2 class="section-title">Trabajamos con las mejores marcas</h2>
 
         <div class="brands-slider">
-          <div class="brands-track">
-            <div class="brand-card">KATIVA</div>
-            <div class="brand-card">PANTENE</div>
-            <div class="brand-card">HEAD & SHOULDERS</div>
-            <div class="brand-card">CHERIMOYA</div>
-            <div class="brand-card">ELVIVE</div>
-            <div class="brand-card">RECAMIER</div>
-            <div class="brand-card">GARNIER</div>
-            <div class="brand-card">TÍO NACHO</div>
-            <div class="brand-card">BE NATURAL</div>
-            <div class="brand-card">NATURA</div>
-            <div class="brand-card">CYZONE</div>
-            <div class="brand-card">ÉSIKA</div>
-            <div class="brand-card">YANBAL</div>
-            <div class="brand-card">SKALA</div>
-            <div class="brand-card">LANOSTERIN</div>
-            <div class="brand-card">VOGUE</div>
-            <div class="brand-card">GLEE</div>
-            <div class="brand-card">TRANSILUCENT</div>
-            <div class="brand-card">BABYLISS PRO</div>
-            <!-- DUPLICADOS PARA LOOP -->
-
-            <div class="brand-card">KATIVA</div>
-            <div class="brand-card">PANTENE</div>
-            <div class="brand-card">HEAD & SHOULDERS</div>
-            <div class="brand-card">CHERIMOYA</div>
-            <div class="brand-card">ELVIVE</div>
-            <div class="brand-card">RECAMIER</div>
-            <div class="brand-card">GARNIER</div>
-            <div class="brand-card">TÍO NACHO</div>
-            <div class="brand-card">BE NATURAL</div>
-            <div class="brand-card">NATURA</div>
-            <div class="brand-card">CYZONE</div>
-            <div class="brand-card">ÉSIKA</div>
-            <div class="brand-card">YANBAL</div>
-            <div class="brand-card">SKALA</div>
-            <div class="brand-card">LANOSTERIN</div>
-            <div class="brand-card">VOGUE</div>
-            <div class="brand-card">GLEE</div>
-            <div class="brand-card">TRANSILUCENT</div>
-            <div class="brand-card">BABYLISS PRO</div>
-          </div>
+          <!-- Cada marca va una sola vez: el script duplica la lista para el carrusel infinito -->
+          <ul class="brands-track">
+            <li class="brand-card">KATIVA</li>
+            <li class="brand-card">PANTENE</li>
+            <li class="brand-card">HEAD &amp; SHOULDERS</li>
+            <li class="brand-card">CHERIMOYA</li>
+            <li class="brand-card">ELVIVE</li>
+            <li class="brand-card">RECAMIER</li>
+            <li class="brand-card">GARNIER</li>
+            <li class="brand-card">TÍO NACHO</li>
+            <li class="brand-card">BE NATURAL</li>
+            <li class="brand-card">NATURA</li>
+            <li class="brand-card">CYZONE</li>
+            <li class="brand-card">ÉSIKA</li>
+            <li class="brand-card">YANBAL</li>
+            <li class="brand-card">SKALA</li>
+            <li class="brand-card">LANOSTERIN</li>
+            <li class="brand-card">VOGUE</li>
+            <li class="brand-card">GLEE</li>
+            <li class="brand-card">TRANSLUCENT</li>
+            <li class="brand-card">BABYLISS PRO</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -689,53 +796,72 @@
       <div class="container location-grid">
         <div class="location-info">
           <h2>
-            ¿Cómo llegar a nuestra Tienda en
-            <span>VMT José Gálvez</span>?
+            ¿Cómo llegar a nuestra tienda en
+            <span>José Gálvez, VMT</span>?
           </h2>
 
           <p>
-            Encuentra cosméticos, tintes profesionales, perfumería y artículos
-            de cuidado personal en un solo lugar. Estamos ubicados en el Mercado
-            Ateca, listos para atender a vecinos de todo Villa María del Triunfo
-            y proveer a salones de belleza locales con productos económicos y de
-            alta calidad.
+            Estamos dentro del <strong>Mercado Ateca</strong>, en José Gálvez,
+            Villa María del Triunfo. Encuentra cosméticos, tintes
+            profesionales, perfumería y artículos de cuidado personal en un solo
+            lugar, con atención para vecinos y salones de belleza de VMT, Villa
+            El Salvador, San Juan de Miraflores y Lurín.
           </p>
 
-          <div class="location-list">
+          <address class="location-list">
             <div class="location-item">
-              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
               <div>
-                Mercado Ateca<br />
+                <strong>Mercado Ateca, Mz. K Lt. 17</strong><br />
+                Pueblo J.N. Progreso Grupo 2, José Gálvez<br />
                 Villa María del Triunfo, Lima
               </div>
             </div>
             <div class="location-item">
-              <i class="fa-solid fa-clock"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               <div>
-                Lunes a Domingo<br />
-                8:00 am - 8:30 pm
+                <strong>Lunes a domingo</strong><br />
+                8:30 a.m. - 8:30 p.m.
+                <span class="open-status" data-open-status hidden></span>
               </div>
             </div>
             <div class="location-item">
-              <i class="fa-solid fa-phone"></i>
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
               <div>
-                WhatsApp:<br />
-                +51 917 236 616
+                <strong>WhatsApp</strong><br />
+                <a
+                  href="https://wa.me/51917236616"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >+51 917 236 616</a
+                >
               </div>
             </div>
+          </address>
+          <div class="location-actions">
+            <a
+              href="https://maps.app.goo.gl/z8dsLWWSMRvWQ7yD9"
+              class="btn-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+              Cómo llegar
+            </a>
+            <a
+              href="https://www.google.com/maps?cid=12314896689822918033"
+              class="btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-google" aria-hidden="true"></i>
+              Ver reseñas en Google
+            </a>
           </div>
-          <a
-            href="https://maps.app.goo.gl/z8dsLWWSMRvWQ7yD9"
-            class="btn-whatsapp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-solid fa-map-location-dot"></i>
-            Cómo llegar
-          </a>
         </div>
         <div class="map-placeholder">
           <iframe
+            title="Mapa de ubicación de Zafiro Color en el Mercado Ateca, José Gálvez, VMT"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8859.66650257343!2d-76.90426716903194!3d-12.214211717886307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105bf93ff3f7caf%3A0xaae74d4ad2876591!2sZafiro%20Color!5e0!3m2!1ses-419!2spe!4v1779837396301!5m2!1ses-419!2spe"
             width="800"
             height="600"
@@ -754,18 +880,18 @@
           <h2>¿Buscas un producto específico?</h2>
 
           <p>
-            Escríbenos por WhatsApp y te ayudamos a encontrar shampoos, tintes,
-            skincare, maquillaje y mucho más.
+            Escríbenos por WhatsApp y te confirmamos stock y precio de shampoos,
+            tintes, perfumes, esmaltes y mucho más antes de tu visita.
           </p>
         </div>
 
         <a
-          href="https://wa.me/51917236616"
+          href="https://wa.me/51917236616?text=Hola%20Zafiro%20Color%2C%20estoy%20buscando%20un%20producto"
           target="_blank"
           rel="noopener noreferrer"
           class="btn-whatsapp"
         >
-          <i class="fab fa-whatsapp"></i>
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
           Escríbenos ahora
         </a>
       </div>
@@ -774,23 +900,84 @@
     <!-- INFO SECCIÓN PARA SEO LOCAL -->
     <section class="seo-info-section" id="sobre-nosotros">
       <div class="container seo-info-container">
-        <h2>Tu Tienda de Salud, Belleza y Tintes en VMT</h2>
+        <h2>Tu tienda de belleza y tintes en José Gálvez, VMT</h2>
         <p>
-          En <strong>Zafiro Color</strong> entendemos las necesidades de los
-          vecinos y dueños de <strong>salones de belleza</strong> (beauty
-          salons) de <strong>José Gálvez</strong>,
-          <strong>Mercado Ateca</strong> y todo
+          En <strong>Zafiro Color</strong> atendemos a los vecinos y a los
+          <strong>salones de belleza y peluquerías</strong> de
+          <strong>José Gálvez</strong>, el <strong>Mercado Ateca</strong> y todo
           <strong>Villa María del Triunfo</strong>. Somos una tienda de
-          cosméticos mediana pero completamente abastecida, enfocada en
-          ofrecerte marcas originales a precios justos y accesibles.
+          cosméticos bien abastecida, enfocada en ofrecerte marcas originales a
+          precios justos, tanto por unidad como por mayor.
         </p>
         <p>
-          Ya sea que busques tintes profesionales para tu peluquería, colonias y
-          perfumes de marcas conocidas (Natura, Ésika, Yanbal, Cyzone),
-          maquillaje, esmaltes de uñas de larga duración o artículos de cuidado
-          personal diario, en Zafiro Color tenemos stock constante. ¡Visítanos
-          en el Mercado Ateca.
+          Ya sea que busques tintes profesionales para tu peluquería, shampoos
+          en galonera, alisados y tratamientos (Skala, Recamier, Kativa,
+          Lanosterin), colonias y perfumes de marcas conocidas (Natura, Ésika,
+          Yanbal, Cyzone), esmaltes de uñas (Vogue, Glee, Cherimoya) o artículos
+          de cuidado personal diario, en Zafiro Color tenemos stock constante.
+          ¡Visítanos en el Mercado Ateca, abrimos todos los días de 8:30 a.m. a
+          8:30 p.m.!
         </p>
+        <ul class="area-tags" aria-label="Zonas que atendemos">
+          <li>José Gálvez</li>
+          <li>Mercado Ateca</li>
+          <li>Villa María del Triunfo</li>
+          <li>Villa El Salvador</li>
+          <li>San Juan de Miraflores</li>
+          <li>Lurín</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ: el contenido coincide con el FAQPage del JSON-LD -->
+    <section class="faq" id="preguntas">
+      <div class="container faq-container">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Cuál es el horario de atención de Zafiro Color?</summary>
+          <p>
+            Atendemos todos los días, de lunes a domingo, de 8:30 a.m. a 8:30
+            p.m. en el Mercado Ateca, José Gálvez (VMT).
+          </p>
+        </details>
+        <details>
+          <summary>¿Dónde queda Zafiro Color?</summary>
+          <p>
+            Estamos en el Mercado Ateca, Mz. K Lt. 17 (Pueblo J.N. Progreso
+            Grupo 2), José Gálvez, Villa María del Triunfo, Lima.
+            <a
+              href="https://maps.app.goo.gl/z8dsLWWSMRvWQ7yD9"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Abrir en Google Maps</a
+            >.
+          </p>
+        </details>
+        <details>
+          <summary>¿Venden cosméticos y tintes por mayor?</summary>
+          <p>
+            Sí. Vendemos por mayor y menor, tanto a familias como a salones de
+            belleza, peluquerías y revendedores de VMT y alrededores. Escríbenos
+            por WhatsApp para consultar precios por cantidad.
+          </p>
+        </details>
+        <details>
+          <summary>¿Qué medios de pago aceptan?</summary>
+          <p>Aceptamos efectivo, Yape, Plin y tarjeta.</p>
+        </details>
+        <details>
+          <summary>¿Puedo consultar stock y precios por WhatsApp?</summary>
+          <p>
+            Sí. Escríbenos al
+            <a
+              href="https://wa.me/51917236616"
+              target="_blank"
+              rel="noopener noreferrer"
+              >+51 917 236 616</a
+            >
+            y te confirmamos stock y precio antes de tu visita.
+          </p>
+        </details>
       </div>
     </section>
 
@@ -813,6 +1000,7 @@
               <a href="#marcas">Marcas</a>
               <a href="#sobre-nosotros">Sobre nosotros</a>
               <a href="#ubicacion">Ubicación y Horarios</a>
+              <a href="#preguntas">Preguntas frecuentes</a>
             </div>
           </div>
           <div>
@@ -827,9 +1015,19 @@
             <h3>Ubicación</h3>
             <br />
             <div class="footer-links">
-              <span> VMT José Gálvez </span>
-              <span> Lima - Perú </span>
-              <span> WhatsApp: +51 917 236 616</span>
+              <a
+                href="https://maps.app.goo.gl/z8dsLWWSMRvWQ7yD9"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Mercado Ateca, Mz. K Lt. 17</a
+              >
+              <span>José Gálvez, VMT - Lima</span>
+              <a
+                href="https://wa.me/51917236616"
+                target="_blank"
+                rel="noopener noreferrer"
+                >WhatsApp: +51 917 236 616</a
+              >
             </div>
           </div>
           <div>
@@ -843,9 +1041,10 @@
                 <span>Libro de reclamaciones</span>
               </a>
               <a href="legales/libro.html">
-                <!-- Tamaño de imagen recomendado: 120x80px (se renderiza con CSS a max-width: 60px) -->
                 <img
                   src="img/libro.jpg"
+                  width="60"
+                  height="85"
                   alt="Libro de reclamaciones oficial de la tienda Zafiro Color"
                   loading="lazy"
                 />
@@ -884,6 +1083,38 @@
             document.body.classList.remove("no-scroll");
             hamburger.setAttribute("aria-expanded", "false");
           });
+        });
+
+        // Carrusel de marcas: la copia es solo visual (oculta a lectores y buscadores)
+        const track = document.querySelector(".brands-track");
+        const reduceMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        if (track && !reduceMotion) {
+          [...track.children].forEach((card) => {
+            const clone = card.cloneNode(true);
+            clone.setAttribute("aria-hidden", "true");
+            track.appendChild(clone);
+          });
+          track.classList.add("is-animated");
+        }
+
+        // Abierto / cerrado según la hora de Lima (8:30 a.m. - 8:30 p.m.)
+        const limaTime = new Intl.DateTimeFormat("en-GB", {
+          timeZone: "America/Lima",
+          hour: "2-digit",
+          minute: "2-digit",
+          hourCycle: "h23",
+        }).format(new Date());
+        const [h, m] = limaTime.split(":").map(Number);
+        const minutes = h * 60 + m;
+        const isOpen = minutes >= 8 * 60 + 30 && minutes < 20 * 60 + 30;
+        document.querySelectorAll("[data-open-status]").forEach((el) => {
+          el.textContent = isOpen
+            ? "Abierto ahora"
+            : "Cerrado ahora · abrimos a las 8:30 a.m.";
+          el.classList.add(isOpen ? "is-open" : "is-closed");
+          el.hidden = false;
         });
       });
     </script>
