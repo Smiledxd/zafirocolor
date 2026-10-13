@@ -12,6 +12,7 @@ Landing page estática de **Zafiro Color**, tienda de cosméticos y tintes en el
 
 - Publicado en **Cloudflare Pages** con `src/` como carpeta de salida (confirmado por las cabeceras de respuesta de zafirocolor.com). El script `deploy` (gh-pages) no es el despliegue real.
 - `src/_headers` define las cabeceras de seguridad (CSP, HSTS, X-Frame-Options). Debe vivir dentro de `src/` o Cloudflare lo ignora.
+- Cloudflare inyecta su script de Web Analytics (`static.cloudflareinsights.com`, envía datos a `cloudflareinsights.com`); ya está permitido en el CSP.
 - **Si agregas un recurso externo nuevo** (script, fuente, imagen, iframe, endpoint), añade su dominio a la directiva correspondiente del CSP en `src/_headers`, o quedará bloqueado en producción.
 
 ## Datos del negocio (NAP): mantener idénticos en todo el sitio y en la ficha de Google
